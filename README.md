@@ -47,4 +47,4 @@ https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
    - computation graph: u=a*b; v=a*c; w=b+c; J=u+v=w  ==> J=(a-1)*(b+c) 
   
   2.2 Logistic Regression with a Neural Network mindset project
-  - [Project Link](https://www.google.com)
+  - [Logistic Regression with a Neural Network mindset project Link](Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb)
