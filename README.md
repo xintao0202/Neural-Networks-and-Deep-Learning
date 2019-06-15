@@ -15,7 +15,7 @@ https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
   - Performance of algorithm vs amount of data: large NN has better performance with same amount of data
   - increasing the size of a NN does not hurt performance and may help significantly; increasing the training set size doesn't hurt the performance, and it may help significantly
   
-  2. Neutral Network Basics
+  2.1 Neutral Network Basics
   - what does a neuron compute: computes a linear function (z=Wx+b) followed by an activation function
   - Logistic loss: L(y^,y)= -(ylog(y^)+(1-y)log(1-y^))
   - reshape function: e.g. 32 by 32 image with 3 colors: x=img.reshape((32*32*3,1))
@@ -45,3 +45,6 @@ https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
       <br/>How do you vectorize this?
       <br/>c = a + b.T
    - computation graph: u=a*b; v=a*c; w=b+c; J=u+v=w  ==> J=(a-1)*(b+c) 
+  
+  2.2 Logistic Regression with a Neural Network mindset project
+  - [Project Link](https://www.google.com)
