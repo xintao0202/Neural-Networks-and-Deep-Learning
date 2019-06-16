@@ -48,3 +48,34 @@ https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
   
   2.2 Logistic Regression with a Neural Network mindset project
   - [Logistic Regression with a Neural Network mindset project Link](Logistic+Regression+with+a+Neural+Network+mindset+v5.ipynb)
+
+  3.1 Shallow Neural Networks
+  - Neural Networks Representation
+		<br/>a. X is a matrix in which each column is one training example.
+		<br/>b. a^[2]_4 is the activation output by the 4th neuron of the 2nd layer
+		<br/>c. a^[2](12) denotes the activation vector of the 2nd layer for the 12th training example.
+    <br/>d. a^[2] denotes the activation vector of the 2nd layer
+  - Activation functions:
+    <br/>a. the tanh activation usually works better than sigmoid for hidden units because the mean of its ouput is closer to zero, so it centers the data better for the next layer
+    <br/>b.Sigmoid outputs a value between 0 and 1 which makes it a very good choice for binary classification. You can classify as 0 if the output is less than 0.5 and classify as 1 if the output is more than 0.5. It can be done with tanh as well but it is less convenient as the output is between -1 and 1. e.g. building a binary classifier for recognizing cucumbers(y=1) vs. watermelons(y=0)
+
+  - vectorization
+     <br/>Z[l]=W[l]A[l-1]+b[l]
+     <br/>A[l]=g[l](Z[l])
+     
+  - numpy
+  <br/>A = np.random.randn(4,3)
+  <br/>B = np.sum(A, axis = 1, keepdims = True) # B.shape=(4,1)
+  
+  - Initialization
+  		 <br/>a. Suppose you have built a neural network. You decide to initialize the weights and biasesto be zero. Each neuron in the first hidden layer will perform the same computation. So even after multiple iterations of gradient descent each neuron in the layer willbe computing the same thing as other neurons.
+       <br/>b. You have built a network using the tanh activation for all the hidden units. You initialize the weights to relative large values, using np.random.randn(..,..)*1000. What will happen? tanh becomes flat for large values, this leads its gradient to be close to zero. This slows down the optimization algorithm.
+       <br/>c.Logistic Regression doesn't have a hidden layer. If you initialize the weights to zeros, the first example x fed in the logistic regression will output zero but the derivatives of the Logistic Regression depend on the input x (because there's no
+hidden layer) which is not zero. So at the second iteration, the weights values follow x's distribution and are different from each other if x is not a constant vector
+
+ - Shape of parameters
+ <br/>n[l] is is the number of units in layer l. m is number of examples. X is input training set of shape (N_features,m); N_features=number of input x; n[0]=N_features
+ <br/>a. Shape of W: (n[l], n[l-1]) 
+ <br/>b. Shape of b: (n[l],1)
+ <br/>c. Z[l]: (n[l],m)
+ <br/>d. A[l]: (n[l],m)
