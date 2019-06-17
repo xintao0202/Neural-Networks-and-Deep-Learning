@@ -79,3 +79,6 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
  <br/>b. Shape of b: (n[l],1)
  <br/>c. Z[l]: (n[l],m)
  <br/>d. A[l]: (n[l],m)
+
+3.2 Planar data classification with a hidden layer project
+-[Planar data classification with a hidden layer project link] (Planar+data+classification+with+one+hidden+layer+v5.ipynb)
