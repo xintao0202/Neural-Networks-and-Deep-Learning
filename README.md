@@ -83,12 +83,6 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
 3.2 Planar data classification with a hidden layer project
 - [Planar data classification with a hidden layer project link](Planar+data+classification+with+one+hidden+layer+v5.ipynb)
 
-4.2 Building your deep neural network project
-- [Building your deep neural network project project link](Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb)
-
-4.3 Deep Neural Network for Image Classification: Application project
-- [Deep Neural Network for Image Classification: Application project](Deep+Neural+Network+-+Application+v8.ipynb)
-
 4.1 Key concepts on Deep Neural Networks
 - Input/Output of neural Nets (forward/back)
 <br/> What is the "cache" used for in our implementation of forward propagation and backward propagation?
@@ -126,4 +120,10 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
 	<br/>• X:  (n[0],m)
 	<br/>• dz[l]: (n[l],m)
 	<br/>• dA[l]: (n[l],m)<br/>
+	
+4.2 Building your deep neural network project
+- [Building your deep neural network project project link](Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb)
+
+4.3 Deep Neural Network for Image Classification: Application project
+- [Deep Neural Network for Image Classification: Application project](Deep+Neural+Network+-+Application+v8.ipynb)
 
