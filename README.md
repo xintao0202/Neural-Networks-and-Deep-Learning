@@ -119,7 +119,7 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
 	<br/>• A[l]: (n[l],m)
 	<br/>• X:  (n[0],m)
 	<br/>• dz[l]: (n[l],m)
-	<br/>• dA[l]: (n[l],m)
+	<br/>• dA[l]: (n[l],m)<br/>
 4.2 Building your deep neural network project
 - [Building your deep neural network project project link](Building+your+Deep+Neural+Network+-+Step+by+Step+v8.ipynb)
 4.3 Deep Neural Network for Image Classification: Application project
