@@ -84,4 +84,39 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
 - [Planar data classification with a hidden layer project link](Planar+data+classification+with+one+hidden+layer+v5.ipynb)
 
 4.1 Key concepts on Deep Neural Networks
-   
+- Input/Output of neural Nets (forward/back)
+<br/> What is the "cache" used for in our implementation of forward propagation and backward propagation?
+	We use it to pass variables computed during forward propagation to the corresponding backward propagation step. It contains useful values for backward propagation to compute derivatives.
+<br/>During backpropagation you need to know which activation was used in the forward propagation to be able to compute the correct derivative.
+- Parameters vs Hyperparameters
+  <br/>a. Parameters: W, b, 
+  <br/>b. Hyperparameters:  learning rate α, # iterations, #hidden layers L, size of hidden layers or hidden units n[l], choice of activation fucntion (note activation value a[l] is not)
+  <br/>c. Later Hyperparameters: momentum, minibatch size, regularization
+- Why deep?
+  <br/>The deeper layers of a neural network are typically computing more complex features of the input than the earlier layers. 
+  <br/>To compute the function using a shallow network circuit, you will need a large network (where we measure size by the number of logic gates in the network), but (ii) To compute it using a deep network circuit, you need only an exponentially smaller network
+- Vectorization
+ <br/> Vectorization can't avoid for-loop over the layers l=1,2,...L
+- initialize parameters
+ <br/>for(i in range(1, len(layer_dims))):
+     <br/>parameter[‘W’ + str(i)] = np.random.randn(layers[i], layers[i - 1])) * 0.01
+     <br/>parameter[‘b’ + str(i)] = np.random.randn(layers[i], 1) * 0.01
+- Deep learning model
+   <br/>Deep L layer NN: when we count layers in NN, we don't count input layer, we only count hidden layers+ output layers
+		<br/>L: number of layers. We cannot avoid the for-loop iteration over the computations among layers. # of hidden layers= L-1
+		<br/>N[l]: number of nodes in layer l
+		<br/>a[l]: activation in layer l; a[0]=X; a[L]=y^
+		<br/>w[l]: weights 
+		<br/>b[l]: bias
+		<br/>Input features: X; 
+		<br/>m- sample size
+ - Matrix dimensions
+	<br/>• w[l]: (n[l],n[l-1])
+	<br/>• b[l]: (n[l],1)
+	<br/>• dw[l]: (n[l],n[l-1])
+	<br/>• db[l]: (n[l],1)
+	<br/>• z[l]: (n[l],m)
+	<br/>• A[l]: (n[l],m)
+	<br/>• X:  (n[0],m)
+	<br/>• dz[l]: (n[l],m)
+	<br/>• dA[l]: (n[l],m)
