@@ -81,7 +81,7 @@ hidden layer) which is not zero. So at the second iteration, the weights values 
  <br/>d. A[l]: (n[l],m)
 
 3.2 Planar data classification with a hidden layer project
-- [Planar data classification with a hidden layer project link](Planar+data+classification+with+one+hidden+layer+v5.ipynb)
+- [Planar data classification with a hidden layer project link](Planar_data_classification_with_onehidden_layer_v6c-Copy1.ipynb)
 
 4.1 Key concepts on Deep Neural Networks
 - Input/Output of neural Nets (forward/back)
