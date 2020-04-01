@@ -8,10 +8,10 @@ https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
         Being able to try out ideas quicly allows iterate more quickly;
         Faster computation can help speed up iterating a good idea;
         Recent progress in deep learning algorithms allows us train faster
-  - Use insight from previous problem: first try use previous problem without need to iterate multiple times
+  - When an experienced deep learning engineer works on a new problem, they can use insight from previous problems to train a good model on the first try, HOWEVER, they still need to iterate multiple times through different models. Finding the characteristics of a model is key to have good performance. Although experience can help, it requires multiple iterations to build a good model. 
   - Relu Activitaion functions: a=max(0,z)
   - structured data: referes to any data and resides in a fixed field within a record or file, e.g. data in relational database and spreed sheet; unstructured data is all that can't be so readly classified and fit into a neat box, e.g. photos, videos, pdf, webpage, powerpoint, email...
-  - Why RNN (recurrent Neutral Network used for machine learning: it can be trained as a supervised learning problem); applicable when the input/output is a sequence; represet the recurrent process of idea->code->experiment->idea->...
+  - Why RNN (recurrent Neutral Network used for machine learning: it can be trained as a supervised learning problem); applicable when the input/output is a sequence; 
   - Performance of algorithm vs amount of data: large NN has better performance with same amount of data
   - increasing the size of a NN does not hurt performance and may help significantly; increasing the training set size doesn't hurt the performance, and it may help significantly
   
