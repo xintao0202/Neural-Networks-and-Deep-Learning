@@ -2,8 +2,8 @@
 Coursera Neural Networks and Deep Learning by deeplearning.ai
 https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome
 1. Introduction to deep learning
-  - AI is the new electricity: AI is powering personal devices in our homes and offices, similar to electricity
-  - Why deep learning take off: we have access to a lot more data; Deep learning has result in significant improvements; we have access to                                 a lot more computational power
+  - What does the analogy "AI is the new electricity" refer to: similar to electricity starting about 100 years ago, AI is transforming multiple industries from car to agriculture to supply chain…
+  - Why deep learning take off: we have access to a lot more data; Deep learning has result in significant improvements; we have access to a lot more computational power
   - Diagram iterating over different ML ideas (idea, experiment, code): 
         Being able to try out ideas quicly allows iterate more quickly;
         Faster computation can help speed up iterating a good idea;
